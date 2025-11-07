@@ -1,66 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
 <style>
-  table {
-    width: 60%;
-    border-collapse: collapse;
-  }
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
 
-  thead th {
-    background: #f2f2f2; /* sirf header row ke liye */
-    font-weight: bold;
-    padding: 10px;
-  }
+    /* 🔴 HEADER RED SHADE EXACT LIKE IMAGE */
+    thead th {
+        background: #d9534f;
+        color: white;
+        padding: 12px;
+        border: 1px solid #a94442;
+    }
 
-  tbody th, 
-  tbody td {
-    background: white;     /* body rows ka color same */
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
+    /* ✅ LEFT COLUMN (Waist, Chest, Sleeve) */
+    tbody th {
+        background: #f7c6c5;
+        padding: 10px;
+        border: 1px solid #d99a9a;
+        text-align: left;
+    }
 
-  table th, table td {
-    border: 1px solid #ccc;
-    text-align: center;
-  }
+    /* ✅ ROW COLOR SHADES LIKE IMAGE */
+    tbody tr:nth-child(1) td {
+        background: #f3b4b3;   /* Waist row color */
+    }
+    tbody tr:nth-child(2) td {
+        background: #f8d7d7;   /* Chest row color */
+    }
+    tbody tr:nth-child(3) td {
+        background: #f2dede;   /* Sleeve row color */
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #d9d9d9;
+    }
+
 </style>
+</head>
+<body>
 
 <table>
-  <thead>
-    <tr>
-      <th>Part</th>
-      <th>XS</th>
-      <th>S</th>
-      <th>M</th>
-      <th>L</th>
-      <th>XL</th>
-    </tr>
-  </thead>
+    <thead>
+        <tr>
+            <th>Part</th>
+            <th>XS</th>
+            <th>S</th>
+            <th>M</th>
+            <th>L</th>
+            <th>XL</th>
+        </tr>
+    </thead>
 
-  <tbody>
-    <tr>
-      <th>Waist</th>
-      <td>25</td>
-      <td>28</td>
-      <td>30</td>
-      <td>31</td>
-      <td>32</td>
-    </tr>
+    <tbody>
+        <tr>
+            <th>Waist</th>
+            <td>25</td>
+            <td>28</td>
+            <td>30</td>
+            <td>31</td>
+            <td>32</td>
+        </tr>
 
-    <tr>
-      <th>Chest</th>
-      <td>34</td>
-      <td>34</td>
-      <td>38</td>
-      <td>40</td>
-      <td>41</td>
-    </tr>
+        <tr>
+            <th>Chest</th>
+            <td>34</td>
+            <td>34</td>
+            <td>38</td>
+            <td>40</td>
+            <td>41</td>
+        </tr>
 
-    <tr>
-      <th>Sleeve</th>
-      <td>23</td>
-      <td>24</td>
-      <td>24</td>
-      <td>25</td>
-      <td>25</td>
-    </tr>
-  </tbody>
+        <tr>
+            <th>Sleeve</th>
+            <td>23</td>
+            <td>24</td>
+            <td>24</td>
+            <td>25</td>
+            <td>25</td>
+        </tr>
+    </tbody>
 </table>
+
+</body>
+</html>
